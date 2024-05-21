@@ -49,14 +49,47 @@ Great job! You've launched an EC2 instance! You can view your new instance by cl
 
 ![](./images/aws8.png)
 
-###### Connecting to your EC2 from your local PC
+##### Connecting to your EC2 from your local PC
 
 PLEASE NOTE - Anchor tags < > will be used to indicate contents what must be replaced with your unique values. For example, if you have a file named "keypair123.pem" you must enter this information within the corresponding anchor tag: < private-key-name >
 
 Now let's connect to our instance!
 
-Begin by opening Terminal. Once you have opened Terminal, use the cd command to change into the directory that your key pair is located. This is usually the ~/Downloads directory. If you are having difficulty finding it, you can use the ls command to list the contents of your current directory.
+Begin by opening Terminal. Once you have opened Terminal, use the ```cd ```command to change into the directory that your key pair is located. This is usually the ```~/Downloads``` directory. If you are having difficulty finding it, you can use the ```ls ```command to list the contents of your current directory.
 
 Once you have located the key pair, use the command below to activate the key file (.pem). This command will also change permissions (otherwise you may get the error “Bad Permissions”):
 
-`$ sudo chmod 0400 <private-key-name>.pem`
+```$ sudo chmod 0400 <private-key-name>.pem```
+
+
+When prompted, type the password for your local PC and press Enter on your keyboard.
+
+Next, go back to the AWS console for a moment, and navigate to your running EC2 instance. Copy the Public IP address, as shown in the image below:
+
+![](./images/aws9.png)
+
+
+Now that you've copied the Public IP address, go back to Terminal. Connect to the EC2 instance by using the command below:
+
+``` $ ssh -i <private-key-name>.pem ubuntu@<Public-IP-address>```
+
+Next, you will be asked if you want to continue connecting. Type ```Yes``` and press Enter on your keyboard.
+
+
+To verify that you are connected, you should see your IP address on the top-right of the screen. Nice job! You have successfully connected to your Linux server in the Cloud environment.
+
+![](./images/aws10.png)
+
+
+###### APACHE
+
+
+####### Installing Apache on the virtual environment
+
+What is Apache? Apache is a widely-used fast, reliable, and secure web server software. A web server acts as a middleman between the website visitor browser and the server.
+
+Now we will install Apache using Ubuntu’s package manager: ‘apt’ Begin by using the $ sudo apt update command to check for any available updates.
+
+Next, run the following command to run the Apache package installation:
+
+
