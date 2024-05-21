@@ -24,3 +24,6 @@ Begin by registering and setting up an AWS account and following the directions 
 
 
 ![](./images/aws.png)
+
+Once you have signed-in to your AWS account, navigate to the top-right of the screen and select your preferred region (this should be the closest region to your physical location).
+
