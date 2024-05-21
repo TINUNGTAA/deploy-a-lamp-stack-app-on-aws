@@ -8,3 +8,6 @@ What is a Web Stack? It is is a group of software components, used to implement 
 
 
 ### Setting up a virture environment
+
+Linux is an operating system that manages the underlying hardware on your PC. It is an open-source software that is used worldwide. It is flexible and easy to configure.
+
