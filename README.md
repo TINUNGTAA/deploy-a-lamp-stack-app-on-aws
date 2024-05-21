@@ -11,3 +11,5 @@ What is a Web Stack? It is is a group of software components, used to implement 
 
 Linux is an operating system that manages the underlying hardware on your PC. It is an open-source software that is used worldwide. It is flexible and easy to configure.
 
+In order to complete this project, it is necessary to set up a virtual environment. In order to achieve this, first, create a free AWS account and then create a virtual server using the Ubuntu Server OS. More details to come shortly!
+
